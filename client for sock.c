@@ -44,7 +44,11 @@ if(connection_status == -1){
 char server_response[256];// A CHARACTER ARRAY WITH 256 SIZES MEANT FOR STORING THE DATA RECIEVED FROM THE SERVER
 recv(network_socket, &server_response, sizeof(server_response), 0);//0 STANDS FOR THE FLAG 
 //idk close the socket
+    if(server_response > 0){
+        printf("s\n",%server_response);
+    }
 close(SOCK);//SOCK means sock_stream aka tcp connection
     return 0;
 }
+
 
